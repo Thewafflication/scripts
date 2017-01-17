@@ -1,0 +1,10 @@
+sudo apt install apache2 openssl-blacklist ssl-cert php5 php5-gd php5-json php5-mcrypt php5-mysqlnd php5-recode php5-readline mcrypt php5-xmlrpc php-pear mariadb-server git 
+
+sudo mysql -u root -p
+	CREATE USER invoiceUser;
+	CREATE DATABASE invoiceplane;
+	GRANT ALL PRIVILEGES ON invoiceplane.* TO invoiceUser@localhost IDENTIFIED BY "6083042546";
+
+
+
+
