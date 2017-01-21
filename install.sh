@@ -20,6 +20,7 @@ sudo find /var/www/ -type f -exec chmod 644 {} \;
 sudo chown -R www-data:www-data /var/www/
 #read -n1 -r -p "Fixed Owner!" key
 sudo systemctl restart apache2.service
+sudo systemctl daemon-reload
 sudo systemctl status apache2.service
 
 
